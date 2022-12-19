@@ -1,1 +1,139 @@
-##Style
+@font-face {
+  font-family: Roboto;
+   src: url("assets/fonts/Roboto.ttf");
+ }
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+* {
+    box-sizing: border-box;
+  }
+
+header {
+  color: blue;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  }
+
+  .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #4d2323;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 3px;
+}
+  
+  .section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #672f2f;
+}
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(179, 10, 16);
+  }
+
+  .section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+  margin-top: 20px;
+  color: black;
+  line-height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.section-image {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 10px solid #6c0000;
+
+}
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+.nav-list {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  color: brown;
+  transition: .10s;
+}
+
+.nav-item {
+  color: #5d7260;
+}
+
+.link {
+  text-decoration: none;
+  color: #829985;
+  transition: color 0.5s;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+.avatar {
+  width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+footer {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  }
+
+.code {
+font-size: 15px;
+}
